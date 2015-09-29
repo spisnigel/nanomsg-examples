@@ -19,4 +19,4 @@ clean:
 
 # macro to compile a c program into corresponding program
 $(BIN_PATH)%: $(SRC_PATH)%.c
-	gcc $< -o $@ $(LDFLAGS)
+	gcc -std=c99 $< -o $@ $(LDFLAGS)
